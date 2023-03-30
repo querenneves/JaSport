@@ -10,13 +10,13 @@ public class Menu {
 
 		Scanner leia = new Scanner(System.in);
 
-		int opcao;
-		String titular, cpf, celular, plano;
+		int opcao, planos,  escolha;
+		String celular, titular, cpf;
 		float valor;
 
 		while (true) {
-			System.out.println(Cores.TEXT_BLUE + Cores.ANSI_BLACK_BACKGROUND
-					+ "********************************************************************************");
+			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
+					+ "***********************************************************************");
 			System.out.println("                                                                       ");
 			System.out.println("       ##    ###    ######   ########   #######  # #######  ########   ");
 			System.out.println("       ##   ## ##  ##    ##  ##     ## ##     ## # #     ##    ##      ");
@@ -27,20 +27,20 @@ public class Menu {
 			System.out.println("  ######  ##     ##  ######  ##         #######  # #      ##   ##      ");
 			System.out.println("                                                                       ");
 			System.out.println("            1 - Cadastrar                                              ");
-			System.out.println("            2 - Contratar plano                                        ");
-			System.out.println("            3 - Tipos de planos                                        ");
-			System.out.println("            4 - Listar planos                                          ");
-			System.out.println("            5 - Listar clientes                                        ");
-			System.out.println("            6 - Cancelar plano                                         ");
-			System.out.println("            7 - Sair                                                   ");
+			System.out.println("            2 - Listar planos                                          ");
+			System.out.println("            3 - Contratar plano                                        ");
+			System.out.println("            3 - Cancelar plano                                         ");
+			System.out.println("            4 - Sair                                                   ");
+			System.out.println("                                                                       ");
 			System.out.println("***********************************************************************");
 			System.out.println("Entre com a opção desejada:                                            ");
+			System.out.println("                                                                       ");
 			System.out.println(
 					"                                                                       " + Cores.TEXT_RESET);
 
 			opcao = leia.nextInt();
 
-			if (opcao == 7) {
+			if (opcao == 4) {
 				System.out.println(Cores.TEXT_CYAN_BOLD + "Unidos pelo esporte, juntos pela vitória!");
 				sobre();
 				leia.close();
@@ -50,89 +50,98 @@ public class Menu {
 			switch (opcao) {
 			case 1:
 
-				System.out.println("Cadastrar Titular\n");
+				System.out.println("Cadastrar Clientes\n");
 
-				System.out.println("Digite o nome do Titular: ");
+				System.out.println("Digite do titular: ");
 				leia.skip("\\R");
 				titular = leia.nextLine();
 
-				System.out.println("Digite o CPF do Titular:");
+				System.out.println("Digite o CPF do cliente: ");
 				cpf = leia.nextLine();
 
-				System.out.println("Digite o telefone do Titular:");
+				System.out.println("Digite o celular: ");
 				celular = leia.nextLine();
 
 				break;
 
 			case 2:
-				System.out.println("Contratar plano\n  ");
-				System.out.println("Digite o pedido do cliente: ");
-				leia.skip("\\R");
-				plano = leia.nextLine();
+		     
 				
+				System.out.println("Nossos planos");
+		        System.out.println("1\t Basic Mensal R$60");
+		        System.out.println("2\t Premiun Anual $100,00");
+		        System.out.println("3\t Basic Mensal  $612,00  c/ (desconto de 15%)");
+		        System.out.println("4\t Premiun Anual $960,00 c/ (desconto de  20%)");
+		        System.out.println("Colha um plano: ");
+		        escolha = leia.nextInt();
+		        
+		        switch(escolha) {
+		        
+		        case 1:
+		        	System.out.println("Pacote Mensal Basic Todos os Esportes $60,00");
+		        	break;
+		        case 2:
+		        	System.out.println("Pacote Mensal Premiun Todos os Esportes + treinador $100,00");
+		        	break;
+		        case 3:
+		        	System.out.println("Pacote Anual Basic Todos os Esportes (desconto de 15%) $612,00");
+		        	break;
+		        case 4:
+		        	System.out.println("Pacote Anual Premiun Todos os Esportes + treinador (desconto de  20%) $960,00");
+		        	break;
+				
+		        }
+
 				break;
 
 			case 3:
-				System.out.println("Planos de pacotes\n ");
+				System.out.println("Cancelar plano\n ");
 				
-				break;
-
 			case 4:
-				System.out.println("Listar planos\n");
-				
-				break;
+				System.out.println("Sair\n ");
 
-			case 5:
-				System.out.println("Listar titulares\n");
-				
-				break;
-
-			case 6:
-				System.out.println("Cancelar plano\n");
-				
 				break;
 
 			default:
 				System.out.println("\nOpção Invalida!\n ");
 
-				
 				break;
 			}
 		}
 	}
+	
 
 	public static void sobre() {
-		System.out.println(Cores.TEXT_WHITE+ "\n   Projeto Criado por:");
-		System.out.println(Cores.TEXT_WHITE+ "\n   GitHub:");
-		System.out.println("*************************************************");                                                                                                                                                                                                
-		System.out.println("                                                 ");                                                                                                                                                                                                
-		System.out.println("   Equipe desenvolvedora:                        ");                                                                                                                                                                                             
-		System.out.println("                                                 ");                                                                                                                                                                                               
-		System.out.println("*************************************************");                                                                                                                                                                                              
-		System.out.println("   Ketelyn Medina                                ");                                                                                                                                                                                                
-		System.out.println("   GitHub: https://github.com/KetelynMM          ");                                                                                                                                                                                                
-		System.out.println("                                                 ");                                                                                                                                                                                              
-		System.out.println("*************************************************");                                                                                                                                                                                               
-		System.out.println("                                                 ");                                                                                                                                                                                               
-		System.out.println("*************************************************");                                                                                                                                                                                               
-		System.out.println("   Leticia Oliveira                              ");                                                                                                                                                                                               
-		System.out.println("  GitHub: https://github.com/intrxnce            ");                                                                                                                                                                                               
-		System.out.println("                                                 ");                                                                                                                                                                                                
-		System.out.println("*************************************************");                                                                                                                                                                                                
-		System.out.println("                                                 ");                                                                                                                                                                                               
-		System.out.println("*************************************************");                                                                                                                                                                                                
-		System.out.println("   GitHub: Nicolle Sanches                       ");                                                                                                                                                                                               
-		System.out.println("   https://github.com/nicollesanches             ");                                                                                                                                                                                               
-		System.out.println("                                                 ");                                                                                                                                                                                               
-		System.out.println("*************************************************");                                                                                                                                                                                             
-		System.out.println("                                                 ");                                                                                                                                                                                               
-		System.out.println("*************************************************");                                                                                                                                                                                             
-		System.out.println("   GitHub: https://github.com/querenneves        ");                                                                                                                                                                                             
-		System.out.println("                                                 ");                                                                                                                                                                                             
-		System.out.println("*************************************************");                                                                                                                                                                                           
-		System.out.println("                                                 ");                                                                                                                                                                                             
-		System.out.println("*************************************************");                                                                                                                                                                                                                               
+		System.out.println(Cores.TEXT_WHITE + "\n   Projeto Criado por:");
+		System.out.println(Cores.TEXT_WHITE + "\n   GitHub:");
+		System.out.println("*************************************************");
+		System.out.println("                                                 ");
+		System.out.println("   Equipe desenvolvedora:                        ");
+		System.out.println("                                                 ");
+		System.out.println("*************************************************");
+		System.out.println("   GitHub: Ketelyn Medina                        ");
+		System.out.println("   https://github.com/KetelynMM                  ");
+		System.out.println("                                                 ");
+		System.out.println("*************************************************");
+		System.out.println("                                                 ");
+		System.out.println("*************************************************");
+		System.out.println("   GitHub: Leticia Oliveira                      ");
+		System.out.println("   https://github.com/intrxnce                   ");
+		System.out.println("                                                 ");
+		System.out.println("*************************************************");
+		System.out.println("                                                 ");
+		System.out.println("*************************************************");
+		System.out.println("   GitHub: Nicolle Sanches                       ");
+		System.out.println("   https://github.com/nicollesanches             ");
+		System.out.println("                                                 ");
+		System.out.println("*************************************************");
+		System.out.println("                                                 ");
+		System.out.println("*************************************************");
+		System.out.println("  GitHub: Queren Neves                           ");
+		System.out.println("  https://github.com/querenneves                 ");
+		System.out.println("*************************************************");
+		System.out.println("                                                 ");
+		System.out.println("*************************************************");
 	}
 
-	}
-
+}
