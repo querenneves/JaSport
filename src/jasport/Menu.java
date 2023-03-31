@@ -19,13 +19,13 @@ public class Menu {
 					+ "°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°");
 			System.out.println("                                                                       ");
 			System.out.println("                                                                       ");
-			System.out.println("        ##    ###    ######   ########   #######  # #######  ########  ");
-			System.out.println("        ##   ## ##  ##    ##  ##     ## ##     ## # #     ##    ##     ");
-			System.out.println("        ##  ##   ##  ##       ##      # ##     ## # #     ##    ##     ");
-			System.out.println("        ## ##     ##  ######  ########  ##     ## # #######     ##     ");
-			System.out.println("  ##    ## #########       ## ##        ##     ## # #    ##     ##     ");
-			System.out.println("  ##    ## ##     ## ##    ## ##        ##     ## # #     ##    ##     ");
-			System.out.println("   ######  ##     ##  ######  ##         #######  # #      ##   ##     ");
+			System.out.println("        ##    ###     ######  ########   #######  ########  ########   ");
+			System.out.println("        ##   ## ##   ##    ## ##     ## ##     ## ##     ##    ##      ");
+			System.out.println("        ##  ##   ##  ##       ##      # ##     ## ##     ##    ##      ");
+			System.out.println("        ## ##     ##  ######  ########  ##     ## ########     ##      ");
+			System.out.println("  ##    ## #########       ## ##        ##     ## ##    ##     ##      ");
+			System.out.println("  ##    ## ##     ## ##    ## ##        ##     ## ##     ##    ##      ");
+			System.out.println("   ######  ##     ##  ######  ##         #######  ##      ##   ##      ");
 			System.out.println("                                                                       ");
 			System.out.println("                                                                       ");
 			System.out.println("                        1 - Cadastrar                                  ");
@@ -44,7 +44,6 @@ public class Menu {
 			opcao = leia.nextInt();
 
 			if (opcao == 4) {
-				System.out.println(Cores.TEXT_CYAN_BOLD + "Unidos pelo esporte, juntos pela vitória!");
 				sobre();
 				leia.close();
 				System.exit(0);
