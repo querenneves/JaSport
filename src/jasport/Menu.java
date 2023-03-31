@@ -71,7 +71,7 @@ public class Menu {
 
 				System.out.println("Nossos planos");
 				System.out.println("\n\t1- Basic Mensal \tR$  60,00");
-				System.out.println("\t2- Premium Anual \tR$ 100,00");
+				System.out.println("\t2- Premium Mensal \tR$ 100,00");
 				System.out.println("\t3- Basic Mensal  \tR$ 612,00  c/ (desconto de 15%)");
 				System.out.println("\t4- Premium Anual \tR$ 960,00 c/ (desconto de  20%)");
 				System.out.println("\nEscolha um plano: ");
@@ -144,7 +144,7 @@ public class Menu {
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
 		
-		System.out.println(Cores.TEXT_CYAN_BOLD + "Unidos pelo esporte, juntos pela vitória!");
+
 	}
 
 }
