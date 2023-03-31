@@ -30,10 +30,9 @@ public class Menu {
 			System.out.println("                                                                       ");
 			System.out.println("                        1 - Cadastrar                                  ");
 			System.out.println("                        2 - Listar planos                              ");
-			System.out.println("                        3 - Contratar plano                            ");
-			System.out.println("                        4 - Cancelar plano                             ");
-			System.out.println("                        5 - Sobre                                      ");
-			System.out.println("                        6 - Sair                                       ");
+			System.out.println("                        3 - Cancelar plano                             ");
+			System.out.println("                        4 - Sobre                                      ");
+			System.out.println("                        5 - Sair                                       ");
 			System.out.println("                                                                       ");
 			System.out.println("°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°");
 			System.out.println("                                                                       ");
@@ -91,19 +90,16 @@ public class Menu {
 				break;
 
 			case 3:
-				System.out.println("Contratar Plano ");
-
-			case 4:
 				System.out.println("Cancelar Plano ");
 				System.out.println("Para cancelar um plano, vá presencialmente até a secretaria do local.");
 				System.out.println("Lembre-se que, ao cancelar o plano, não será possível associar-se novamente durante um período de 6 meses.");
 				System.out.println("Boa sorte!");
 					
 				break;
-			case 5:
+			case 4:
 				sobre();
 				break;
-			case 6:
+			case 5:
 				leia.close();
 				System.exit(0);
 				break;
@@ -117,6 +113,9 @@ public class Menu {
 
 
 	public static void sobre() {
+		
+		System.out.println("O Clube Jasport foi criado com a intenção de reunir os esportes mais populares em um só lugar, de modo a facilitar sua prática, além de manter um preço acessível a fim de incentivar práticas saudáveis para diversas pessoas");
+		
 		System.out.println(Cores.TEXT_WHITE + "\n   Projeto Criado por:");
 		System.out.println(Cores.TEXT_WHITE + "\n   GitHub da equipe:");
 		System.out.println("*************************************************");
