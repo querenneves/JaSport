@@ -10,29 +10,32 @@ public class Menu {
 
 		Scanner leia = new Scanner(System.in);
 
-		int opcao, planos,  escolha;
+		int opcao, planos, escolha;
 		String celular, titular, cpf;
 		float valor;
 
 		while (true) {
-			System.out.println(Cores.TEXT_YELLOW + Cores.ANSI_BLACK_BACKGROUND
-					+ "***********************************************************************");
+			System.out.println(Cores.TEXT_CYAN + Cores.ANSI_BLACK_BACKGROUND
+					+ "°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°");
 			System.out.println("                                                                       ");
-			System.out.println("       ##    ###    ######   ########   #######  # #######  ########   ");
-			System.out.println("       ##   ## ##  ##    ##  ##     ## ##     ## # #     ##    ##      ");
-			System.out.println("       ##  ##   ##  ##       ##      # ##     ## # #     ##    ##      ");
-			System.out.println("       ## ##     ##  ######  ########  ##     ## # #######     ##      ");
-			System.out.println(" ##    ## #########       ## ##        ##     ## # #    ##     ##      ");
-			System.out.println(" ##    ## ##     ## ##    ## ##        ##     ## # #     ##    ##      ");
-			System.out.println("  ######  ##     ##  ######  ##         #######  # #      ##   ##      ");
+			System.out.println("                                                  °                    ");
+			System.out.println("        ##    ###    ######   ########   #######  # #######  ########  ");
+			System.out.println("        ##   ## ##  ##    ##  ##     ## ##     ## # #     ##    ##     ");
+			System.out.println("        ##  ##   ##  ##       ##      # ##     ## # #     ##    ##     ");
+			System.out.println("        ## ##     ##  ######  ########  ##     ## # #######     ##     ");
+			System.out.println("  ##    ## #########       ## ##        ##     ## # #    ##     ##     ");
+			System.out.println("  ##    ## ##     ## ##    ## ##        ##     ## # #     ##    ##     ");
+			System.out.println("   ######  ##     ##  ######  ##         #######  # #      ##   ##     ");
 			System.out.println("                                                                       ");
-			System.out.println("            1 - Cadastrar                                              ");
-			System.out.println("            2 - Listar planos                                          ");
-			System.out.println("            3 - Contratar plano                                        ");
-			System.out.println("            3 - Cancelar plano                                         ");
-			System.out.println("            4 - Sair                                                   ");
 			System.out.println("                                                                       ");
-			System.out.println("***********************************************************************");
+			System.out.println("                        1 - Cadastrar                                  ");
+			System.out.println("                        2 - Listar planos                              ");
+			System.out.println("                        3 - Contratar plano                            ");
+			System.out.println("                        4 - Cancelar plano                             ");
+			System.out.println("                        5 - Sair                                       ");
+			System.out.println("                                                                       ");
+			System.out.println("°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°");
+			System.out.println("                                                                       ");
 			System.out.println("Entre com a opção desejada:                                            ");
 			System.out.println("                                                                       ");
 			System.out.println(
@@ -65,40 +68,39 @@ public class Menu {
 				break;
 
 			case 2:
-		     
-				
+
 				System.out.println("Nossos planos");
-		        System.out.println("1\t Basic Mensal R$60");
-		        System.out.println("2\t Premiun Anual $100,00");
-		        System.out.println("3\t Basic Mensal  $612,00  c/ (desconto de 15%)");
-		        System.out.println("4\t Premiun Anual $960,00 c/ (desconto de  20%)");
-		        System.out.println("Colha um plano: ");
-		        escolha = leia.nextInt();
-		        
-		        switch(escolha) {
-		        
-		        case 1:
-		        	System.out.println("Pacote Mensal Basic Todos os Esportes $60,00");
-		        	break;
-		        case 2:
-		        	System.out.println("Pacote Mensal Premiun Todos os Esportes + treinador $100,00");
-		        	break;
-		        case 3:
-		        	System.out.println("Pacote Anual Basic Todos os Esportes (desconto de 15%) $612,00");
-		        	break;
-		        case 4:
-		        	System.out.println("Pacote Anual Premiun Todos os Esportes + treinador (desconto de  20%) $960,00");
-		        	break;
-				
-		        }
+				System.out.println("\n\t1- Basic Mensal \tR$  60,00");
+				System.out.println("\t2- Premiun Anual \tR$ 100,00");
+				System.out.println("\t3- Basic Mensal  \tR$ 612,00  c/ (desconto de 15%)");
+				System.out.println("\t4- Premium Anual \tR$ 960,00 c/ (desconto de  20%)");
+				System.out.println("\nEscolha um plano: ");
+				escolha = leia.nextInt();
+
+				switch (escolha) {
+
+				case 1:
+					System.out.println("Pacote Mensal Basic Todos os Esportes $60,00");
+					break;
+				case 2:
+					System.out.println("Pacote Mensal Premiun Todos os Esportes + treinador $100,00");
+					break;
+				case 3:
+					System.out.println("Pacote Anual Basic Todos os Esportes (desconto de 15%) $612,00");
+					break;
+				case 4:
+					System.out.println("Pacote Anual Premiun Todos os Esportes + treinador (desconto de  20%) $960,00");
+					break;
+
+				}
 
 				break;
 
 			case 3:
-				System.out.println("Cancelar plano\n ");
-				
+				System.out.println("Contratar Plano ");
+
 			case 4:
-				System.out.println("Sair\n ");
+				System.out.println("Cancelar Plano ");
 
 				break;
 
@@ -109,7 +111,6 @@ public class Menu {
 			}
 		}
 	}
-	
 
 	public static void sobre() {
 		System.out.println(Cores.TEXT_WHITE + "\n   Projeto Criado por:");
