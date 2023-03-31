@@ -32,7 +32,8 @@ public class Menu {
 			System.out.println("                        2 - Listar planos                              ");
 			System.out.println("                        3 - Contratar plano                            ");
 			System.out.println("                        4 - Cancelar plano                             ");
-			System.out.println("                        5 - Sair                                       ");
+			System.out.println("                        5 - Sobre                                      ");
+			System.out.println("                        6 - Sair                                       ");
 			System.out.println("                                                                       ");
 			System.out.println("°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°");
 			System.out.println("                                                                       ");
@@ -42,13 +43,7 @@ public class Menu {
 					"                                                                       " + Cores.TEXT_RESET);
 
 			opcao = leia.nextInt();
-
-			if (opcao == 4) {
-				sobre();
-				leia.close();
-				System.exit(0);
-			}
-
+		
 			switch (opcao) {
 			case 1:
 
@@ -100,9 +95,15 @@ public class Menu {
 
 			case 4:
 				System.out.println("Cancelar Plano ");
-
+					
 				break;
-
+			case 5:
+				sobre();
+				break;
+			case 6:
+				leia.close();
+				System.exit(0);
+				break;
 			default:
 				System.out.println("\nOpção Invalida!\n ");
 
@@ -110,6 +111,7 @@ public class Menu {
 			}
 		}
 	}
+
 
 	public static void sobre() {
 		System.out.println(Cores.TEXT_WHITE + "\n   Projeto Criado por:");
