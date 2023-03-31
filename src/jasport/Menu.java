@@ -18,7 +18,7 @@ public class Menu {
 			System.out.println(Cores.TEXT_CYAN + Cores.ANSI_BLACK_BACKGROUND
 					+ "°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°°");
 			System.out.println("                                                                       ");
-			System.out.println("                                                  °                    ");
+			System.out.println("                                                                       ");
 			System.out.println("        ##    ###    ######   ########   #######  # #######  ########  ");
 			System.out.println("        ##   ## ##  ##    ##  ##     ## ##     ## # #     ##    ##     ");
 			System.out.println("        ##  ##   ##  ##       ##      # ##     ## # #     ##    ##     ");
@@ -71,7 +71,7 @@ public class Menu {
 
 				System.out.println("Nossos planos");
 				System.out.println("\n\t1- Basic Mensal \tR$  60,00");
-				System.out.println("\t2- Premiun Anual \tR$ 100,00");
+				System.out.println("\t2- Premium Anual \tR$ 100,00");
 				System.out.println("\t3- Basic Mensal  \tR$ 612,00  c/ (desconto de 15%)");
 				System.out.println("\t4- Premium Anual \tR$ 960,00 c/ (desconto de  20%)");
 				System.out.println("\nEscolha um plano: ");
@@ -83,13 +83,13 @@ public class Menu {
 					System.out.println("Pacote Mensal Basic Todos os Esportes $60,00");
 					break;
 				case 2:
-					System.out.println("Pacote Mensal Premiun Todos os Esportes + treinador $100,00");
+					System.out.println("Pacote Mensal Premium Todos os Esportes + treinador $100,00");
 					break;
 				case 3:
 					System.out.println("Pacote Anual Basic Todos os Esportes (desconto de 15%) $612,00");
 					break;
 				case 4:
-					System.out.println("Pacote Anual Premiun Todos os Esportes + treinador (desconto de  20%) $960,00");
+					System.out.println("Pacote Anual Premium Todos os Esportes + treinador (desconto de  20%) $960,00");
 					break;
 
 				}
@@ -143,6 +143,8 @@ public class Menu {
 		System.out.println("*************************************************");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
+		
+		System.out.println(Cores.TEXT_CYAN_BOLD + "Unidos pelo esporte, juntos pela vitória!");
 	}
 
 }
