@@ -114,32 +114,37 @@ public class Menu {
 
 	public static void sobre() {
 		System.out.println(Cores.TEXT_WHITE + "\n   Projeto Criado por:");
-		System.out.println(Cores.TEXT_WHITE + "\n   GitHub:");
+		System.out.println(Cores.TEXT_WHITE + "\n   GitHub da equipe:");
 		System.out.println("*************************************************");
 		System.out.println("                                                 ");
 		System.out.println("   Equipe desenvolvedora:                        ");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
+		System.out.println("                                                 ");
 		System.out.println("   GitHub: Ketelyn Medina                        ");
 		System.out.println("   https://github.com/KetelynMM                  ");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
+		System.out.println("                                                 ");
 		System.out.println("   GitHub: Leticia Oliveira                      ");
 		System.out.println("   https://github.com/intrxnce                   ");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
+		System.out.println("                                                 ");
 		System.out.println("   GitHub: Nicolle Sanches                       ");
 		System.out.println("   https://github.com/nicollesanches             ");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");
+		System.out.println("                                                 ");
 		System.out.println("  GitHub: Queren Neves                           ");
 		System.out.println("  https://github.com/querenneves                 ");
+		System.out.println("                                                 ");
 		System.out.println("*************************************************");
 		System.out.println("                                                 ");
 		System.out.println("*************************************************");

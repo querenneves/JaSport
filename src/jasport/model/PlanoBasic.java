@@ -2,18 +2,18 @@ package jasport.model;
 
 public class PlanoBasic extends Titular {
 
-	private float planob;
+	private int planob;
 
 	public PlanoBasic(String titular, String cpf, String celular) {
 		super(titular, cpf, celular);
 
 	}
 
-	public float getPlabob() {
+	public int getPlabob() {
 		return planob;
 	}
 
-	public void setPlabob(float planob) {
+	public void setPlabob(int planob) {
 		this.planob = planob;
 	}
 
