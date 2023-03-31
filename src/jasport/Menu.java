@@ -95,6 +95,9 @@ public class Menu {
 
 			case 4:
 				System.out.println("Cancelar Plano ");
+				System.out.println("Para cancelar um plano, vá presencialmente até a secretaria do local.");
+				System.out.println("Lembre-se que, ao cancelar o plano, não será possível associar-se novamente durante um período de 6 meses.");
+				System.out.println("Boa sorte!");
 					
 				break;
 			case 5:
