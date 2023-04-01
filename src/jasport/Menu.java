@@ -114,7 +114,9 @@ public class Menu {
 
 	public static void sobre() {
 		
-		System.out.println("O Clube Jasport foi criado com a intenção de reunir os esportes mais populares em um só lugar, de modo a facilitar sua prática, além de manter um preço acessível a fim de incentivar práticas saudáveis para diversas pessoas");
+		System.out.println("\nO Clube Jasport foi criado com a intenção de reunir os esportes mais populares em um só lugar, de modo a facilitar sua prática,"
+				+ " além de manter um preço acessível a fim de incentivar práticas saudáveis para diversas pessoas");
+		
 		
 		System.out.println(Cores.TEXT_WHITE + "\n   Projeto Criado por:");
 		System.out.println(Cores.TEXT_WHITE + "\n   GitHub da equipe:");
